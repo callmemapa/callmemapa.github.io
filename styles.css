@@ -1,0 +1,38 @@
+.navbar {
+    background: linear-gradient(to right,#3a6186, #89253e);
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    height: 40px;
+}  
+
+body {
+    color: white;
+    background-size: 100%; 
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; } }
+    
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
