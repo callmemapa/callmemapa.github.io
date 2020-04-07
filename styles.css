@@ -28,11 +28,21 @@ body {
     text-align: center;
 }
 
+.black-text {
+    color: black;
+}
+
 @media (min-width: 768px) {
     .carousel-multi-item-2 .col-md-3 {
     float: left;
     width: 25%;
-    max-width: 100%; } }
+    max-width: 100%; } 
+    .carousel-multi-item-2 .col-md-4 {
+        float: left;
+        width: 33%;
+        max-width: 100%; }
+}
     
-    .carousel-multi-item-2 .card img {
-    border-radius: 2px; }
+.carousel-multi-item-2 .card img {
+    border-radius: 2px;
+}
