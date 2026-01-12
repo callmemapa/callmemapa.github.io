@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Experience</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen">
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between px-4 py-3 backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="text-primary flex size-10 items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">arrow_back_ios</span>
+            </a>
+            <span class="text-lg font-bold text-slate-900 dark:text-white">Experience</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="hidden md:flex items-center gap-4">
+                <a href="experience.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Experience</a>
+                <a href="education.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Education</a>
+                <!-- <a href="portfolio.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Portfolio</a> -->
+                <a href="skills.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Skills</a>
+            </div>
+            <div class="relative">
+                <button id="menu-button" aria-label="Open menu" aria-expanded="false"
+                    class="flex items-center justify-center p-2 text-slate-900 dark:text-white hover:bg-white/5 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="nav-menu"
+                    class="hidden absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-lg z-50">
+                    <a href="experience.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Experience</a>
+                    <a href="education.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Education</a>
+                    <!-- <a href="portfolio.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Portfolio</a> -->
+                    <a href="skills.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Skills</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-md md:max-w-4xl mx-auto pb-20">
+        <div class="px-4 pt-6 pb-2">
+            <h3 class="text-primary text-sm font-semibold uppercase tracking-widest">Career Journey</h3>
+        </div>
+        <div class="px-4">
+            <div class="grid grid-cols-[40px_1fr] gap-x-4">
+                <div class="flex flex-col items-center gap-1 pt-1">
+                    <div class="bg-primary/20 p-1 rounded-full border border-primary/30">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 flex items-center justify-center bg-primary"
+                            data-alt="Modern corporate logo for Tech Corp">
+                            <span class="material-symbols-outlined text-white text-[18px]">rocket_launch</span>
+                        </div>
+                    </div>
+                    <div class="w-[2px] bg-gradient-to-b from-primary to-slate-200 dark:to-slate-800 h-full grow"></div>
+                </div>
+                <div class="flex flex-1 flex-col pb-10">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Software Engineer
+                            </p>
+                            <p class="text-primary text-sm font-medium mt-1 leading-normal">Konecta • Colombia • Remote
+                            </p>
+                            <p
+                                class="text-slate-500 dark:text-slate-400 text-xs font-normal mt-1 leading-normal uppercase tracking-wider">
+                                Dec 2021 - Present</p>
+                        </div>
+                        <span
+                            class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase">Active</span>
+                    </div>
+                    <div class="mt-4 space-y-1">
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Designed and developed
+                                internal applications to enhance the efficiency and productivity of call center agents,
+                                improving task completion speed by optimizing workflows.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Built responsive and
+                                user-friendly interfaces using React and Angular, ensuring seamless user experiences
+                                across devices.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Implemented
+                                server-side functionality with Node.js and Express, enabling scalable back-end services.
+                            </p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Collaborated with
+                                cross-functional teams to gather requirements, define project scopes, and deliver
+                                high-quality solutions within tight deadlines.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Streamlined internal
+                                processes by integrating APIs and third-party tools, reducing manual tasks and enhancing
+                                system performance.</p>
+                        </label>
+                    </div>
+                    <div class="flex gap-2 mt-4 flex-wrap">
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Angular</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">React</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">TypeScript</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">JavaScript</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">HTML</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">CSS</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Bootstrap</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Material UI</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Node.js</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Express.js</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Postman</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">AWS Lambdas</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">SonarQube</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">OWASP ZAP</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Git</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">JIRA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <div class="bg-slate-200 dark:bg-slate-800 p-1 rounded-full">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 flex items-center justify-center bg-slate-400 dark:bg-slate-700"
+                            data-alt="Minimalist design studio logo">
+                            <span class="material-symbols-outlined text-white text-[18px]">code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-1 flex-col pb-10">
+                    <div>
+                        <p class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Junior Frontend
+                            Developer</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm font-medium mt-1 leading-normal">Catenaria
+                            LTDA • Colombia • Remote</p>
+                        <p
+                            class="text-slate-500 dark:text-slate-400 text-xs font-normal mt-1 leading-normal uppercase tracking-wider">
+                            Aug 2020 - Dec 2021</p>
+                    </div>
+                    <div class="mt-4 space-y-1">
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Planned, developed,
+                                and maintained web applications to empower external clients to market and sell their
+                                services effectively.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Designed and
+                                implemented dynamic user interfaces using Angular, ensuring high performance and
+                                responsiveness.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Integrated APIs to
+                                enable seamless data exchange between systems, enhancing functionality and user
+                                experience.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Collaborated with a
+                                short team to define project scopes, plan development timelines, and align deliverables
+                                with client needs.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Conducted regular
+                                maintenance and optimization of existing applications, reducing downtime and improving
+                                system reliability.</p>
+                        </label>
+                        <label class="flex gap-x-3 py-1 flex-row">
+                            <span
+                                class="material-symbols-outlined text-slate-400 text-[18px] mt-0.5">check_circle</span>
+                            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Enhanced usability and
+                                accessibility through iterative improvements based on user feedback and performance
+                                analysis.</p>
+                        </label>
+                    </div>
+                    <div class="flex gap-2 mt-4 flex-wrap">
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Angular</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">TypeScript</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">JavaScript</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">HTML</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">CSS</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Angular Material</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Bootstrap</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Firebase</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">JIRA</p>
+                        </div>
+                        <div
+                            class="flex h-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 px-3">
+                            <p class="text-slate-600 dark:text-slate-300 text-xs font-medium">Git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 px-4 pb-12">
+            <a href="assets/files/CV.pdf" download="CV.pdf" role="button"
+                class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 inline-flex">
+                <span class="material-symbols-outlined text-[20px]">description</span>
+                Download Full Resume
+            </a>
+            <!-- <p class="text-center text-slate-500 dark:text-slate-400 text-xs mt-6">References available upon request</p> -->
+        </div>
+    </main>
+    <nav
+        class="fixed md:hidden bottom-0 inset-x-0 bg-background-light/95 dark:bg-[#0c131a]/95 ios-blur border-t border-slate-200 dark:border-slate-800 pb-safe">
+        <div class="flex justify-around items-center h-16 max-w-md mx-auto px-6">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-[10px] font-medium">Home</span>
+            </a>
+            <a href="experience.html" class="flex flex-col items-center gap-1 text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">work</span>
+                <span class="text-[10px] font-medium">Experience</span>
+            </a>
+            <a href="education.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">school</span>
+                <span class="text-[10px] font-medium">Education</span>
+            </a>
+            <!-- <a href="portfolio.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">grid_view</span>
+                <span class="text-[10px] font-medium">Portfolio</span>
+            </a> -->
+            <a href="skills.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">terminal</span>
+                <span class="text-[10px] font-medium">Skills</span>
+            </a>
+        </div>
+    </nav>
+    </main>
+    <script>
+            (function () {
+                const btn = document.getElementById('menu-button');
+                const menu = document.getElementById('nav-menu');
+                if (!btn || !menu) return;
+                function setExpanded(expanded) {
+                    btn.setAttribute('aria-expanded', String(expanded));
+                    if (expanded) menu.classList.remove('hidden');
+                    else menu.classList.add('hidden');
+                }
+                btn.addEventListener('click', function (e) { e.stopPropagation(); setExpanded(btn.getAttribute('aria-expanded') !== 'true'); });
+                document.addEventListener('click', function (e) { if (!menu.contains(e.target) && !btn.contains(e.target)) setExpanded(false); });
+                menu.addEventListener('click', function (e) { e.stopPropagation(); });
+                document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setExpanded(false); });
+            })();
+    </script>
+</body>
+
+</html>

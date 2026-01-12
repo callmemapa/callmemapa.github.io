@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Education</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b7cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between px-4 py-3 backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="text-primary flex size-10 items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">arrow_back_ios</span>
+            </a>
+            <span class="text-lg font-bold text-slate-900 dark:text-white">Profile &amp; Credentials</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="hidden md:flex items-center gap-4">
+                <a href="experience.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Experience</a>
+                <a href="education.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Education</a>
+                <!-- <a href="portfolio.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Portfolio</a> -->
+                <a href="skills.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Skills</a>
+            </div>
+            <div class="relative">
+                <button id="menu-button" aria-label="Open menu" aria-expanded="false"
+                    class="flex items-center justify-center p-2 text-slate-900 dark:text-white hover:bg-white/5 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="nav-menu"
+                    class="hidden absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-lg z-50">
+                    <a href="experience.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Experience</a>
+                    <a href="education.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Education</a>
+                    <!-- <a href="portfolio.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Portfolio</a> -->
+                    <a href="skills.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Skills</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-md md:max-w-4xl mx-auto px-4 pt-6 pb-12">
+        <section>
+            <h2
+                class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-6">
+                Formal Education</h2>
+            <div class="grid grid-cols-[48px_1fr] gap-x-3 px-4">
+                <div class="flex flex-col items-center gap-1 pt-3">
+                    <div
+                        class="bg-primary/20 flex items-center justify-center rounded-full size-10 border border-primary/30 overflow-hidden">
+                        <span class="material-symbols-outlined text-primary">school</span>
+                    </div>
+                    <!-- <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow my-1"></div> -->
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                    <p class="text-slate-900 dark:text-white text-base font-bold leading-normal">Information Systems
+                        Technology</p>
+                    <p class="text-primary text-sm font-semibold mb-1">Universidad del Valle</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm font-normal">2017 - 2021</p>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <h2
+                class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">
+                Professional Certifications</h2>
+            <div class="px-4 flex flex-col gap-3">
+                <div
+                    class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div
+                        class="size-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-amber-500 !text-3xl">verified</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-slate-900 dark:text-white text-base font-bold truncate">Build Infrastructure with
+                            Terraform on Google Cloud</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">ID: GSP345</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">Issued: 05 Jan 2026</p>
+                        <a href="https://www.credly.com/badges/22c654bb-8239-4e5d-8beb-5752fbe2367d/public_url"
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-1.5 rounded-full transition-colors">
+                                Verify Badge
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div
+                        class="size-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-amber-500 !text-3xl">verified</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-slate-900 dark:text-white text-base font-bold truncate">Build a Secure Google
+                            Cloud Network</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">ID: GSP322</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">Issued: 05 Jan 2026</p>
+                        <a href="https://www.credly.com/badges/ead8c7ed-0737-4281-b48f-c88f10061051/public_url"
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-1.5 rounded-full transition-colors">
+                                Verify Badge
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div
+                        class="size-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-amber-500 !text-3xl">verified</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-slate-900 dark:text-white text-base font-bold truncate">Implement Cloud Security
+                            Fundamentals on Google Cloud</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">ID: GSP342</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">Issued: 05 Jan 2026</p>
+                        <a href="https://www.credly.com/badges/358974cb-e2dc-44e0-93f5-374f2e935706/public_url"
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-1.5 rounded-full transition-colors">
+                                Verify Badge
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div
+                        class="size-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-amber-500 !text-3xl">verified</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-slate-900 dark:text-white text-base font-bold truncate">Set Up an App Dev
+                            Environment on Google Cloud</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">ID: GSP315</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">Issued: 05 Jan 2026</p>
+                        <a href="https://www.credly.com/badges/2e5cd03c-6d2d-4f06-8c35-4f5df1eb6f7f/public_url"
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-1.5 rounded-full transition-colors">
+                                Verify Badge
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div
+                        class="size-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-amber-500 !text-3xl">verified</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-slate-900 dark:text-white text-base font-bold truncate">Implement Load Balancing
+                            on Compute Engine</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">ID: GSP313</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-2">Issued: 11 Dec 2025</p>
+                        <a href="https://www.credly.com/badges/0ee6f272-1b16-4dff-a41e-4151853d2f45/public_url"
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="bg-primary hover:bg-primary/90 text-white text-xs font-bold px-4 py-1.5 rounded-full transition-colors">
+                                Verify Badge
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <h2
+                class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                Online Courses</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4">
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="Cloud engineer visual"
+                        style="background-image: linear-gradient(135deg,#0f172a 0%,#0ea5e9 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">cloud</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso de Google Associate Cloud Engineer Certification</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 03 Jan 2026</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="TypeScript course visual"
+                        style="background-image: linear-gradient(135deg,#0f172a 0%,#6366f1 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">integration_instructions</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso de TypeScript</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 05 Dec 2025</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="React course visual"
+                        style="background-image: linear-gradient(135deg,#06b6d4 0%,#2563eb 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">web</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso de React.js</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 29 Apr 2024</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="AI tools for developers"
+                        style="background-image: linear-gradient(135deg,#7c3aed 0%,#06b6d4 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">auto_awesome</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Herramientas de IA para Developers</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 06 Feb 2024</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="Frontend developer visual"
+                        style="background-image: linear-gradient(135deg,#10b981 0%,#059669 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">developer_mode</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso de Frontend Developer</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 05 Feb 2024</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="JavaScript basics"
+                        style="background-image: linear-gradient(135deg,#f97316 0%,#f59e0b 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">language</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso Básico de JavaScript</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 02 Sep 2021</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="Angular course visual"
+                        style="background-image: linear-gradient(135deg,#ef4444 0%,#f97316 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">extension</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Curso de Angular 8</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 03 Oct 2020</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 pb-4 bg-white dark:bg-slate-900/30 rounded-xl p-3 md:p-2 md:pb-3 border border-slate-100 dark:border-slate-800/50">
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex items-center justify-center relative overflow-hidden"
+                        data-alt="Communication audio course"
+                        style="background-image: linear-gradient(135deg,#f97316 0%,#ef4444 100%);">
+                        <span class="material-symbols-outlined text-white/60 !text-4xl">record_voice_over</span>
+                    </div>
+                    <div class="px-1">
+                        <p
+                            class="text-slate-900 dark:text-white text-sm font-bold leading-tight h-14 md:h-10 line-clamp-2">
+                            Audiocurso de Comunicación Efectiva</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-1">Issued: 24 Sep 2020</p>
+                        <div class="flex items-center gap-1 mt-2">
+                            <span class="material-symbols-outlined text-primary !text-sm">workspace_premium</span>
+                            <p class="text-slate-500 dark:text-slate-400 text-[11px] font-medium uppercase">Platzi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav
+        class="fixed md:hidden bottom-0 inset-x-0 bg-background-light/95 dark:bg-[#0c131a]/95 ios-blur border-t border-slate-200 dark:border-slate-800 pb-safe">
+        <div class="flex justify-around items-center h-16 max-w-md mx-auto px-6">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-[10px] font-medium">Home</span>
+            </a>
+            <a href="experience.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">work</span>
+                <span class="text-[10px] font-medium">Experience</span>
+            </a>
+            <a href="education.html" class="flex flex-col items-center gap-1 text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">school</span>
+                <span class="text-[10px] font-medium">Education</span>
+            </a>
+            <!-- <a href="portfolio.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">grid_view</span>
+                <span class="text-[10px] font-medium">Portfolio</span>
+            </a> -->
+            <a href="skills.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">terminal</span>
+                <span class="text-[10px] font-medium">Skills</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+            (function () {
+                const btn = document.getElementById('menu-button');
+                const menu = document.getElementById('nav-menu');
+                if (!btn || !menu) return;
+                function setExpanded(expanded) {
+                    btn.setAttribute('aria-expanded', String(expanded));
+                    if (expanded) menu.classList.remove('hidden');
+                    else menu.classList.add('hidden');
+                }
+                btn.addEventListener('click', function (e) { e.stopPropagation(); setExpanded(btn.getAttribute('aria-expanded') !== 'true'); });
+                document.addEventListener('click', function (e) { if (!menu.contains(e.target) && !btn.contains(e.target)) setExpanded(false); });
+                menu.addEventListener('click', function (e) { e.stopPropagation(); });
+                document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setExpanded(false); });
+            })();
+    </script>
+</body>
+
+</html>

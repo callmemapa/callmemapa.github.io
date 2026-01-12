@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display">
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between px-4 py-3 backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="text-primary flex size-10 items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">arrow_back_ios</span>
+            </a>
+            <span class="text-lg font-bold text-slate-900 dark:text-white">Portfolio</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="hidden md:flex items-center gap-4">
+                <a href="experience.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Experience</a>
+                <a href="education.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Education</a>
+                <a href="portfolio.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Portfolio</a>
+                <a href="skills.html"
+                    class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Skills</a>
+            </div>
+            <div class="relative">
+                <button id="menu-button" aria-label="Open menu" aria-expanded="false"
+                    class="flex items-center justify-center p-2 text-slate-900 dark:text-white hover:bg-white/5 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="nav-menu"
+                    class="hidden absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-lg z-50">
+                    <a href="experience.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Experience</a>
+                    <a href="education.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Education</a>
+                    <a href="portfolio.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Portfolio</a>
+                    <a href="skills.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Skills</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="flex flex-col min-h-screen">
+        <div
+            class="flex gap-3 p-4 overflow-x-auto hide-scrollbar sticky top-[72px] bg-background-light dark:bg-background-dark z-40">
+            <div
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-5 pr-5 cursor-pointer">
+                <p class="text-white text-sm font-semibold leading-normal">All</p>
+            </div>
+            <div
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#1c2127] border border-slate-300 dark:border-slate-700 pl-5 pr-5 cursor-pointer">
+                <p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Web</p>
+            </div>
+            <div
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#1c2127] border border-slate-300 dark:border-slate-700 pl-5 pr-5 cursor-pointer">
+                <p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Mobile</p>
+            </div>
+            <div
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#1c2127] border border-slate-300 dark:border-slate-700 pl-5 pr-5 cursor-pointer">
+                <p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Fullstack</p>
+            </div>
+            <div
+                class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#1c2127] border border-slate-300 dark:border-slate-700 pl-5 pr-5 cursor-pointer">
+                <p class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">UI/UX</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+            <div class="@container">
+                <div
+                    class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1c2127] border border-slate-200 dark:border-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                        data-alt="Sleek dark themed financial dashboard interface"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDH7bXdv-zqXUQM8SKkbuFU2ErvvLaCUFdOiWNFnOMX4TenIgCDMeFW4OebGxnncEW3q6U1_I-7RLJBLhaue6TPyah8ssQSPVU7YDz-H6AsCSkl2kfJY8gl-S7P55hnLfiug0yvsiRzZWTp-xO8_9j8dxRTyCnR3NoPuEfG7ysy4rwssqhdAlzfK3-mgmf5BLvXHKXuvtP9Pab16qUHYbPeYDDqv-y9ithEFs828_c5J5GH58O1eev49Tpc1JBei97kUdb1VZSGUVU");'>
+                    </div>
+                    <div class="flex w-full flex-col items-stretch justify-center gap-3 p-5">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
+                                FinTech Dashboard</h3>
+                            <p class="text-slate-500 dark:text-[#9dabb9] text-sm font-normal leading-relaxed">
+                                A real-time financial tracking app with complex data visualizations and predictive
+                                analytics.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">React</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">D3.js</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">Tailwind</span>
+                        </div>
+                        <div class="flex gap-3 mt-2">
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-md active:scale-95 transition-transform">
+                                <span class="truncate">Live Demo</span>
+                                <span class="material-symbols-outlined text-sm ml-1">open_in_new</span>
+                            </button>
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white gap-2 text-sm font-bold active:scale-95 transition-transform border border-slate-200 dark:border-slate-700">
+                                <span class="material-symbols-outlined text-[20px]">code</span>
+                                <span class="truncate">Source</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="@container">
+                <div
+                    class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1c2127] border border-slate-200 dark:border-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                        data-alt="Smartphone screen showing modern fashion ecommerce app"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCygUifVkjInB-la6nnQm3SSW1Hs9vbbsav26Bjj7WWYJr6LTqrcOctM7Rl_rXA1aPsFyQGL9s8jqXJbxbXw5lUFwMY8VQbI5jZUk345dhgv1HOCimo52R0baYCFUw49i3xjgJMCXEPlSSfaz7KvG2X_BxN-1RXIdh7Nr4CVfmQeOr3zF8TcvnC25fkteGSY_NXjWE_Wpz40VncE0N5KYvjDiW-Lt-4dvTCxa4Dwm9Yciq9_rBZQmKJ-QOBfo0q0y8Ap6bS5gIlK28");'>
+                    </div>
+                    <div class="flex w-full flex-col items-stretch justify-center gap-3 p-5">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
+                                E-Commerce Mobile</h3>
+                            <p class="text-slate-500 dark:text-[#9dabb9] text-sm font-normal leading-relaxed">
+                                High-performance shopping experience built for global scale with multi-currency support.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">React
+                                Native</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">Redux</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">Node.js</span>
+                        </div>
+                        <div class="flex gap-3 mt-2">
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-md active:scale-95 transition-transform">
+                                <span class="truncate">Live Demo</span>
+                                <span class="material-symbols-outlined text-sm ml-1">open_in_new</span>
+                            </button>
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white gap-2 text-sm font-bold active:scale-95 transition-transform border border-slate-200 dark:border-slate-700">
+                                <span class="material-symbols-outlined text-[20px]">code</span>
+                                <span class="truncate">Source</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="@container">
+                <div
+                    class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1c2127] border border-slate-200 dark:border-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                        data-alt="Digital grid with glowing nodes representing AI"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnEcJKj8fJdHmuS2CU9o0intcVUU2toqcS32GlfG7fibWxhwgLcWjcGUxX0ERKvgPsXb3sIp8bCPXQrf2Ssoj-CmuiFmPNFxPuUIp2OmCLLFsJuBzm3KAp7PQWCK8hjB6u8SVm-wCbwCJbkCn1hNxwgL3Oyz1QiWnMh_MEvi7uateKmXDFuR0J0TaoR5lOs5MQu_vWN5JF1CWG7o6I25nXXh11-wmI7yFtddzUKGq8KRXwTcTHLnf6ztIC4MSttb8FZAPjYsONrhs");'>
+                    </div>
+                    <div class="flex w-full flex-col items-stretch justify-center gap-3 p-5">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">AI
+                                Asset Manager</h3>
+                            <p class="text-slate-500 dark:text-[#9dabb9] text-sm font-normal leading-relaxed">
+                                Automated image tagging and organization system powered by neural networks.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">Python</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">PyTorch</span>
+                            <span
+                                class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 uppercase tracking-wider">FastAPI</span>
+                        </div>
+                        <div class="flex gap-3 mt-2">
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-md active:scale-95 transition-transform">
+                                <span class="truncate">Live Demo</span>
+                                <span class="material-symbols-outlined text-sm ml-1">open_in_new</span>
+                            </button>
+                            <button
+                                class="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-100 dark:bg-[#283039] text-slate-900 dark:text-white gap-2 text-sm font-bold active:scale-95 transition-transform border border-slate-200 dark:border-slate-700">
+                                <span class="material-symbols-outlined text-[20px]">code</span>
+                                <span class="truncate">Source</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-10 bg-background-light dark:bg-background-dark"></div>
+    </main>
+    <nav
+        class="fixed md:hidden bottom-0 inset-x-0 bg-background-light/95 dark:bg-[#0c131a]/95 ios-blur border-t border-slate-200 dark:border-slate-800 pb-safe">
+        <div class="flex justify-around items-center h-16 max-w-md mx-auto px-6">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">home</span>
+                <span class="text-[10px] font-medium">Home</span>
+            </a>
+            <a href="experience.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">work</span>
+                <span class="text-[10px] font-medium">Experience</span>
+            </a>
+            <a href="education.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">school</span>
+                <span class="text-[10px] font-medium">Education</span>
+            </a>
+            <a href="portfolio.html" class="flex flex-col items-center gap-1 text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">grid_view</span>
+                <span class="text-[10px] font-medium">Portfolio</span>
+            </a>
+            <a href="skills.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">terminal</span>
+                <span class="text-[10px] font-medium">Skills</span>
+            </a>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+    <script>
+            (function () {
+                const btn = document.getElementById('menu-button');
+                const menu = document.getElementById('nav-menu');
+                if (!btn || !menu) return;
+                function setExpanded(expanded) {
+                    btn.setAttribute('aria-expanded', String(expanded));
+                    if (expanded) menu.classList.remove('hidden');
+                    else menu.classList.add('hidden');
+                }
+                btn.addEventListener('click', function (e) { e.stopPropagation(); setExpanded(btn.getAttribute('aria-expanded') !== 'true'); });
+                document.addEventListener('click', function (e) { if (!menu.contains(e.target) && !btn.contains(e.target)) setExpanded(false); });
+                menu.addEventListener('click', function (e) { e.stopPropagation(); });
+                document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setExpanded(false); });
+            })();
+    </script>
+</body>
+
+</html>

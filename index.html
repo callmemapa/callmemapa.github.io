@@ -1,26 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="dark" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
-    <title>Personal profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .bg-mesh-pattern {
+            background-color: #101922;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(210, 100%, 20%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210, 100%, 15%, 0.1) 0px, transparent 50%);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
 
-<body>
-    <div id="header"></div>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-mesh-pattern">
+        <nav
+            class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-md bg-white/5 dark:bg-background-dark/50">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary size-10 rounded flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">MP</span>
+                </div>
+                <span class="text-white font-bold text-lg tracking-tight">Personal profile</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="experience.html"
+                        class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Experience</a>
+                    <a href="education.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Education</a>
+                    <!-- <a href="portfolio.html"
+                        class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Portfolio</a> -->
+                    <a href="skills.html"
+                        class="text-slate-600 dark:text-slate-200 hover:text-primary transition-colors">Skills</a>
+                </div>
+                <div class="relative">
+                    <button id="menu-button"
+                        class="flex items-center justify-center p-2 text-slate-900 dark:text-white hover:bg-white/5 rounded-full transition-colors"
+                        aria-label="Open menu" aria-expanded="false">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                    <div id="nav-menu"
+                        class="hidden absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-lg z-50">
+                        <a href="experience.html"
+                            class="block px-3 py-2 text-slate-200 hover:text-primary">Experience</a>
+                        <a href="education.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Education</a>
+                        <!-- <a href="portfolio.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Portfolio</a> -->
+                        <a href="skills.html" class="block px-3 py-2 text-slate-200 hover:text-primary">Skills</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="flex-1 flex flex-col">
+            <section class="flex flex-col items-center px-6 pt-12 pb-8 @container">
+                <div class="flex w-full flex-col gap-8 items-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+                        <div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-[#1c2127] shadow-2xl min-h-48 w-48"
+                            data-alt="Professional headshot of a smiling creative developer"
+                            style='background-image: url("assets/images/profile.jpg");'>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3">
+                        <h1
+                            class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight text-center max-w-sm">
+                            Software Developer &amp; Web Designer
+                        </h1>
+                        <p class="text-slate-400 text-base font-normal leading-relaxed text-center max-w-xs">
+                            Building frontend‑first solutions: fast, accessible, component‑driven interfaces with
+                            pragmatic backend integrations for scalable, maintainable systems.
+                        </p>
+                        <div class="flex items-center gap-2 text-slate-500 text-sm mt-1">
+                            <span class="material-symbols-outlined text-sm">location_on</span>
+                            <span>Based in Cali, Colombia</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full max-w-[320px] gap-3 pt-4">
+                        <a href="portfolio.html"
+                            class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-6 bg-primary text-white text-base font-semibold transition-all hover:brightness-110 active:scale-95">
+                            <span>View Projects</span>
+                        </a>
+                        <a href="mailto:mariapaulamosquerarengifo@gmail.com"
+                            class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-6 bg-white/5 border border-white/10 text-white text-base font-semibold transition-all hover:bg-white/10 active:scale-95">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-8">
+                <div class="px-6 flex items-center justify-between">
+                    <h3 class="text-white text-xl font-bold leading-tight tracking-tight">Core Expertise</h3>
+                    <div class="h-[1px] flex-1 bg-white/10 ml-4"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-6">
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:bg-white/10">
+                        <div class="text-primary bg-primary/10 size-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined">web</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-white text-base font-bold leading-tight">Frontend Development</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-normal">Building responsive, accessible
+                                interfaces with Angular/React, CSS Frameworks and component-driven patterns.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:bg-white/10">
+                        <div class="text-primary bg-primary/10 size-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined">brush</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-white text-base font-bold leading-tight">Web Design</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-normal">Design systems, visual polish
+                                and interaction design for coherent user experiences.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:bg-white/10">
+                        <div class="text-primary bg-primary/10 size-12 rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined">cloud</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-white text-base font-bold leading-tight">Backend Development</h2>
+                            <p class="text-slate-400 text-sm font-normal leading-normal">APIs, Node.js and server-side
+                                architecture to support scalable frontends.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="mt-4 mb-12">
+                <div class="px-6 flex items-center justify-between mb-6">
+                    <h3 class="text-white text-xl font-bold leading-tight tracking-tight">Featured Projects</h3>
+                    <div class="h-[1px] flex-1 bg-white/10 ml-4"></div>
+                </div>
+                <div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 aspect-video">
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            data-alt="Modern mobile app interface design showcase"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6sSetJEZRH6AmFe0tBp-B13yyxnXH7MeUa_MURNc31A4Zz0nA_B3dJFtQgkPxmCmXecyjazQb3QmAjDn3_mjiZ3qw1-RpdaPc9p4Frm4QaU0SKsOeK_7pP8AXoSPPtjuC1HcRCaXxxLrcaOYzleoR3_iGs1YL8bGa3vOHhO-LU5NOur1ldSLTa6vAWXZNQ1Sj0SEsdHWvnCczdnKuzYahPAshdAKove-fXeCiaVEYcG53ojl6JHtW8epahy-BvB8f5FE2Qjr1qSA");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-5 w-full">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Fintech</p>
+                                    <h4 class="text-white text-lg font-bold">NeoBanking App</h4>
+                                </div>
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full cursor-pointer">
+                                    <span class="material-symbols-outlined text-white">arrow_outward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 aspect-video">
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            data-alt="Sleek e-commerce website design on a dark background"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXl5PAtM4PW4oFQf4VtP8RH4Sdb87heNk-Vy4UDDxGtCoR_5Dko6weO3gqfNtDiCxgLQ2oZU5-3ojFsU5DLZoLihRpEcXiSWPzirDtlTn69R2ZhFYjIzxGwwJTOdHWX7WqKXKnMs8KNyWTlpcVF835ExBn7qiB6-yuBozTfRHPy00W-zUbGodIpKzMe3s1sL9zm07mpyDJsi6HLAWvGuZ88Tf-nnWq87aaxNNZbY1kbcONFtw3kkNYO_rLIlQI41CNpBBHpwg4-1A");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-5 w-full">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">E-Commerce
+                                    </p>
+                                    <h4 class="text-white text-lg font-bold">Vogue Storefront</h4>
+                                </div>
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-full cursor-pointer">
+                                    <span class="material-symbols-outlined text-white">arrow_outward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+        <footer class="mt-auto py-12 px-6 border-t border-white/10 bg-black/20 text-center">
+            <div class="flex justify-center gap-6 mb-8">
+                <a class="text-slate-400 hover:text-primary transition-colors"
+                    href="https://www.linkedin.com/in/callmemapa" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.1c.5-.9 1.8-1.8 3.8-1.8 4.1 0 4.9 2.6 4.9 6V24h-4v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.8-2.8 3.8V24h-4V8z" />
+                    </svg>
+                </a>
+                <a class="text-slate-400 hover:text-primary transition-colors" href="https://github.com/callmemapa"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.72 1.27 3.39.97.11-.76.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.51.11-3.15 0 0 .98-.31 3.2 1.19a11.03 11.03 0 0 1 2.92-.39c.99 0 1.99.13 2.92.39 2.22-1.5 3.2-1.19 3.2-1.19.63 1.64.23 2.85.11 3.15.75.81 1.2 1.84 1.2 3.1 0 4.42-2.71 5.39-5.29 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56C20.71 21.4 24 17.09 24 12 24 5.65 18.35.5 12 .5z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-slate-500 text-xs">© 2026 Maria Paula Mosquera Rengifo. UI Built with <a class="text-primary"
+                    href="https://stitch.withgoogle.com/" target="_blank">https://stitch.withgoogle.com</a>.</p>
+        </footer>
+        <div class="h-8 bg-black/20"></div>
+    </div>
+    <nav
+        class="fixed md:hidden bottom-0 inset-x-0 bg-background-light/95 dark:bg-[#0c131a]/95 ios-blur border-t border-slate-200 dark:border-slate-800 pb-safe">
+        <div class="flex justify-around items-center h-16 max-w-md mx-auto px-6">
+            <a href="index.html" class="flex flex-col items-center gap-1 text-primary">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+                <span class="text-[10px] font-medium">Home</span>
+            </a>
+            <a href="experience.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">work</span>
+                <span class="text-[10px] font-medium">Experience</span>
+            </a>
+            <a href="education.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">school</span>
+                <span class="text-[10px] font-medium">Education</span>
+            </a>
+            <!-- <a href="portfolio.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">grid_view</span>
+                <span class="text-[10px] font-medium">Portfolio</span>
+            </a> -->
+            <a href="skills.html" class="flex flex-col items-center gap-1 text-slate-400">
+                <span class="material-symbols-outlined">terminal</span>
+                <span class="text-[10px] font-medium">Skills</span>
+            </a>
+        </div>
+    </nav>
+    <script>
+            (function () {
+                const btn = document.getElementById('menu-button');
+                const menu = document.getElementById('nav-menu');
 
-    <main>
-        <div id="about"></div>
-        <div id="experience"></div>
-        <!-- <div id="projects"></div> -->
-        <div id="contact"></div>
-    </main>
+                if (!btn || !menu) return;
 
-    <div id="footer"></div>
-    <script src="js/main.js"></script>
+                function setExpanded(expanded) {
+                    btn.setAttribute('aria-expanded', String(expanded));
+                    if (expanded) menu.classList.remove('hidden');
+                    else menu.classList.add('hidden');
+                }
+
+                btn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                    setExpanded(!isOpen);
+                });
+
+                document.addEventListener('click', function (e) {
+                    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                        setExpanded(false);
+                    }
+                });
+
+                menu.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') setExpanded(false);
+                });
+            })();
+    </script>
 </body>
 
 </html>
